@@ -13,6 +13,17 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontos1, pontos2;
+    printf("Cadastro da primeira carta:\n");
+    printf("Código da cidade (ex: A01): ");
+    scanf("%s", codigo1);
+    printf("População: ");
+    scanf("%d", &populacao1);
+    printf("Área: ");
+    scanf("%f", &area1);
+    printf("PIB: ");
+    scanf("%f", &pib1);
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos1);
     // Atributos das duas cartas
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
