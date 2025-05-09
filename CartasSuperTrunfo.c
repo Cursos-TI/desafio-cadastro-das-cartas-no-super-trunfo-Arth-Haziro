@@ -13,6 +13,10 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontos1, pontos2;
+
+    float densidade1, densidade2;
+    float pib_per_capita1, pib_per_capita2;
+    
     printf("Cadastro da primeira carta:\n");
     printf("Código da cidade (ex: A01): ");
     scanf("%s", codigo1);
