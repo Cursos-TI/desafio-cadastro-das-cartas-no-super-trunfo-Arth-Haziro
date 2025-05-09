@@ -46,6 +46,16 @@ int main() {
     pib_per_capita1 = pib1 / populacao1;
     pib_per_capita2 = pib2 / populacao2;
 
+    super_poder1 = (float)populacao1 + area1 + pib1 + pontos1 + pib_per_capita1 + (1.0f / densidade1);
+    super_poder2 = (float)populacao2 + area2 + pib2 + pontos2 + pib_per_capita2 + (1.0f / densidade2);
+    resultado_populacao = (populacao1 > populacao2) ? 1 : 0;
+    resultado_area = (area1 > area2) ? 1 : 0;
+    resultado_pib = (pib1 > pib2) ? 1 : 0;
+    resultado_pontos = (pontos1 > pontos2) ? 1 : 0;
+    resultado_densidade = (densidade1 < densidade2) ? 1 : 0; // menor é melhor
+    resultado_pib_capita = (pib_per_capita1 > pib_per_capita2) ? 1 : 0;
+    resultado_super_poder = (super_poder1 > super_poder2) ? 1 : 0;
+
     printf("\n--- Dados das Cartas ---\n");
 
     printf("\nCarta 1 - %s\n", codigo1);
