@@ -56,23 +56,14 @@ int main() {
     resultado_pib_capita = (pib_per_capita1 > pib_per_capita2) ? 1 : 0;
     resultado_super_poder = (super_poder1 > super_poder2) ? 1 : 0;
 
-    printf("\n--- Dados das Cartas ---\n");
-
-    printf("\nCarta 1 - %s\n", codigo1);
-    printf("População: %d\n", populacao1);
-    printf("Área: %.2f\n", area1);
-    printf("PIB: %.2f\n", pib1);
-    printf("Pontos turísticos: %d\n", pontos1);
-    printf("Densidade Populacional: %.2f\n", densidade1);
-    printf("PIB per Capita: %.2f\n", pib_per_capita1);
-
-    printf("\nCarta 2 - %s\n", codigo2);
-    printf("População: %d\n", populacao2);
-    printf("Área: %.2f\n", area2);
-    printf("PIB: %.2f\n", pib2);
-    printf("Pontos turísticos: %d\n", pontos2);
-    printf("Densidade Populacional: %.2f\n", densidade2);
-    printf("PIB per Capita: %.2f\n", pib_per_capita2);
+    printf("\n--- Resultado da Comparação ---\n");
+    printf("População: %d\n", resultado_populacao);
+    printf("Área: %d\n", resultado_area);
+    printf("PIB: %d\n", resultado_pib);
+    printf("Pontos turísticos: %d\n", resultado_pontos);
+    printf("Densidade Populacional: %d\n", resultado_densidade);
+    printf("PIB per Capita: %d\n", resultado_pib_capita);
+    printf("Super Poder: %d\n", resultado_super_poder);
     // Atributos das duas cartas
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
