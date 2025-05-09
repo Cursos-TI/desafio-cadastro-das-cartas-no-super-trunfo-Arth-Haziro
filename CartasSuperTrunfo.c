@@ -22,7 +22,7 @@ int main() {
     printf("Código da cidade (ex: A01): ");
     scanf("%s", codigo1);
     printf("População: ");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
     printf("Área: ");
     scanf("%f", &area1);
     printf("PIB: ");
@@ -33,7 +33,7 @@ int main() {
     printf("Código da cidade (ex: B02): ");
     scanf("%s", codigo2);
     printf("População: ");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
     printf("Área: ");
     scanf("%f", &area2);
     printf("PIB: ");
@@ -64,6 +64,7 @@ int main() {
     printf("Densidade Populacional: %d\n", resultado_densidade);
     printf("PIB per Capita: %d\n", resultado_pib_capita);
     printf("Super Poder: %d\n", resultado_super_poder);
+
     // Atributos das duas cartas
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
